@@ -6,17 +6,23 @@ Code authors: Elliott Hazen (NOAA, UCSC), Heather Welch (UCSC, NOAA), Stephanie 
 
 Relevant manuscripts:
 
-Hazen et al. 2018 “A dynamic ocean management tool to reduce bycatch and support sustainable fisheries.” Science Advances 4: eaar3001.
+Hazen, E.L., Scales, K.L., Maxwell, S.M., Briscoe, D.K., Welch, H., Bograd, S.J., Bailey, H., Benson, S.R., Eguchi, T., Dewar, H. and Kohin, S., 2018. A dynamic ocean management tool to reduce bycatch and support sustainable fisheries. Science advances, 4(5), p.eaar3001.
 
-Welch et al. 2018 "Practical considerations for operationalizing dynamic management tools." Journal of Applied Ecology.DOI: 10.1111/1365-2664.13281.
+Abrahms, B., Welch, H., Brodie, S., Jacox, M.G., Becker, E.A., Bograd, S.J., Irvine, L.M., Palacios, D.M., Mate, B.R. and Hazen, E.L., 2019. Dynamic ensemble models to predict distributions and anthropogenic risk exposure for highly mobile species. Diversity and Distributions, 25(8), pp.1182-1193.
 
-Abrahms et al. 2019 "WhaleWatch: a dynamic management tool for predicting blue whale density in the California Current." Journal of Applied Ecology 54: 1415-1428.
-
-Tsalyuk et al. 2019 "" Ecological Monographs
+Tsalyuk, M., Kilian, W., Reineking, B. and Getz, W.M., 2019. Temporal variation in resource selection of African elephants follows long‐term variability in resource availability. Ecological Monographs, 89(2), p.e01348.
 
 Description of scripts:
+
 RunAllCode.R - Master file to run all the relevant code assuming you have tracking data.
+
 load_packages_PA.R - Loads all relevant packages.
+PseudoFunctions.R - Functions to create 4 types of pseudotracks.
+get_EnvData.R - Functions to assimilate relevant environmental data for model fitting and evaluation
+ExtractionFunction.R - Functions to sample downloaded environmental data.
+ModelFunctions.R - Functions to build GLMM, GAMM, BRT.
+Model_Eval_Fcns.R - Functions to evaluate GLMM, GAMM, BRT models.
+
 
 2 - generate-pseudo-absences.R Creates 4 pseudoabsence types: correlated random walks, reverse correlated random walks, buffer absences, background absences for both blue whales and elephants
 
