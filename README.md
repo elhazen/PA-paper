@@ -2,15 +2,17 @@
 
 Code supporting the publication "Where do they not go?". 
 
-Code authors: Elliott Hazen (NOAA, UCSC), Heather Welch (UCSC, NOAA), Stephanie Brodie (UCSC, NOAA)
+Tracking data offer where species choose to go but not where they don't. Generating pseudo-absences is an approach to simulating where they could have gone but did not go, yet the impacts of such generation have not yet been tested. The goal of this repo is to assimilate a suite of environmental data along with relevant tracking data for generating absences, sampling environmental data, model fitting, and prediction and evaluation for the manuscript. 
+
+Code authors: Elliott Hazen (NOAA, UCSC), Heather Welch (UCSC, NOAA), Stephanie Brodie (UCSC, NOAA), Briana Abrahms (UW), Gemma Carroll (UCSC, NOAA)
 
 Relevant manuscripts:
-
-Hazen, E.L., Scales, K.L., Maxwell, S.M., Briscoe, D.K., Welch, H., Bograd, S.J., Bailey, H., Benson, S.R., Eguchi, T., Dewar, H. and Kohin, S., 2018. A dynamic ocean management tool to reduce bycatch and support sustainable fisheries. Science advances, 4(5), p.eaar3001.
 
 Abrahms, B., Welch, H., Brodie, S., Jacox, M.G., Becker, E.A., Bograd, S.J., Irvine, L.M., Palacios, D.M., Mate, B.R. and Hazen, E.L., 2019. Dynamic ensemble models to predict distributions and anthropogenic risk exposure for highly mobile species. Diversity and Distributions, 25(8), pp.1182-1193.
 
 Tsalyuk, M., Kilian, W., Reineking, B. and Getz, W.M., 2019. Temporal variation in resource selection of African elephants follows long‐term variability in resource availability. Ecological Monographs, 89(2), p.e01348.
+
+Hazen, E.L., Scales, K.L., Maxwell, S.M., Briscoe, D.K., Welch, H., Bograd, S.J., Bailey, H., Benson, S.R., Eguchi, T., Dewar, H. and Kohin, S., 2018. A dynamic ocean management tool to reduce bycatch and support sustainable fisheries. Science advances, 4(5), p.eaar3001.
 
 Description of scripts:
 
