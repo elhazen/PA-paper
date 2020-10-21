@@ -11,10 +11,11 @@
 
 # 1) Source functions and packages
 source("LoadPackages_PA.R")
+source("PseudoFunctions.R")
+source("get_EnvData.R")
 source("ExtractionFunction.R")
 source("ModelFunctions.R")
 source("Model_Eval_Fncs.R")
-source("get_EnvData.R")
 
 # 2) generate pseudo-absences for tracking data
 ### Start with Blue Whales, then run elephants
