@@ -19,11 +19,11 @@ I) Presence data (tracks) with lat, lon, time, and ideally an error estimate for
 II) Environmental data for blue whales (rasters) can be downloaded from multiple sources. The NetCDF files have been converted to a regularized grid for sampling by presences and pseudoabsences before extraction in this example. Other approaches to environmental download and extraction can be used (e.g. 2, 3a, 3b - https://github.com/elhazen/EcoCast-SciAdv).
 For elephants, environmental layers (shapefiles) are used to calculate distance to roads, distance to water, and long-term average NDVI. 
 
-[b]Description of scripts:[/b]
+**Description of scripts:**
 
 RunAllCode.R - Master file to run all the relevant code assuming you have tracking data.
 
-Functions: 
+**Functions:** 
 
 load_packages_PA.R - Loads all relevant packages.
 PseudoFunctions.R - Functions to create 4 types of pseudoabsences (described below).
@@ -32,7 +32,7 @@ ExtractionFunction.R - Functions to sample downloaded environmental data at tagg
 ModelFunctions.R - Functions to build GLMM, GAMM, BRT.
 Model_Eval_Fcns.R - Functions to evaluate GLMM, GAMM, BRT models.
 
-[b]Scripts that call functions:[/b] 
+**Scripts that call functions:** 
 
 2 - generate-pseudo-absences.R Creates four pseudoabsence types: correlated random walks, reverse correlated random walks, buffer absences, background absences for both blue whales and elephants. Calls PseudoFunctions.R.
 
