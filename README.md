@@ -4,9 +4,9 @@ Code supporting the publication "Where do they not go?".
 
 Tracking data offer where species choose to go but not where they don't. Generating pseudo-absences is an approach to simulating where they could have gone but did not go, yet the impacts of such generation on species distribution model fit and performance have not yet been tested. The goal of this repo is to use tracking data to generate a suite of pseudo-absences, sample environmental data (using , and to fit, predict, and evaluate species distribution models. Ultimately, we find that traditional model performance metrics alone may not identify the best model depending on the goals and desires when building a predictive model, and we reiterate the need to focus on biological realism along-side traditional skill metrics when evaluating such models.
 
-Code authors: Elliott Hazen (NOAA, UCSC), Heather Welch (UCSC, NOAA), Stephanie Brodie (UCSC, NOAA), Briana Abrahms (UW), Gemma Carroll (UCSC, NOAA)
+**Code authors:** Elliott Hazen (NOAA, UCSC), Heather Welch (UCSC, NOAA), Stephanie Brodie (UCSC, NOAA), Briana Abrahms (UW), Gemma Carroll (UCSC, NOAA)
 
-Relevant manuscripts:
+**Relevant manuscripts:**
 
 Abrahms, B., Welch, H., Brodie, S., Jacox, M.G., Becker, E.A., Bograd, S.J., Irvine, L.M., Palacios, D.M., Mate, B.R. and Hazen, E.L., 2019. Dynamic ensemble models to predict distributions and anthropogenic risk exposure for highly mobile species. Diversity and Distributions, 25(8), pp.1182-1193.
 
@@ -14,7 +14,8 @@ Tsalyuk, M., Kilian, W., Reineking, B. and Getz, W.M., 2019. Temporal variation 
 
 Hazen, E.L., Scales, K.L., Maxwell, S.M., Briscoe, D.K., Welch, H., Bograd, S.J., Bailey, H., Benson, S.R., Eguchi, T., Dewar, H. and Kohin, S., 2018. A dynamic ocean management tool to reduce bycatch and support sustainable fisheries. Science advances, 4(5), p.eaar3001.
 
-Required data: 
+**Required data: **
+
 I) Presence data (tracks) with lat, lon, time, and ideally an error estimate for positions to inform environmental extraction. Data are expected to have already been quality controlled for erroneous points. 
 II) Environmental data for blue whales (rasters) can be downloaded from multiple sources. The NetCDF files have been converted to a regularized grid for sampling by presences and pseudoabsences before extraction in this example. Other approaches to environmental download and extraction can be used (e.g. 2, 3a, 3b - https://github.com/elhazen/EcoCast-SciAdv).
 For elephants, environmental layers (shapefiles) are used to calculate distance to roads, distance to water, and long-term average NDVI. 
