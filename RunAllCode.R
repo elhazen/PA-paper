@@ -9,13 +9,16 @@
 # Code written by Elliott Hazen, Heather Welch, Steph Brodie, and Briana Abrahms 
 # Date: 10/21/2020
 
-# 1) Source functions and packages
+# 1) Source functions and packages, set up directories
 source("LoadPackages_PA.R")
 source("PseudoFunctions.R")
 source("get_EnvData.R")
 source("ExtractionFunction.R")
 source("ModelFunctions.R")
-source("Model_Eval_Fncs.R")
+source("Model_Eval_Fcns.R")
+
+in.csv='tags.csv'
+out.dir='output/'
 
 # 2) generate pseudo-absences for tracking data
 ### Start with Blue Whales, then run elephants

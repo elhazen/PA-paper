@@ -14,6 +14,7 @@ createCRW<-function(tags, tagid=tagid, n.sim = 100, reverse = FALSE){
    
   print(tagid)
   tag = tags[which(tags$tag==tagid),c('long', 'lat','dTime')]
+  tag = arrange(tag, dTime)
   
   out.alltags.csv = sprintf('%s/crw_sim_%s.csv', out.dir,tagid)
   
@@ -44,7 +45,7 @@ createCRW<-function(tags, tagid=tagid, n.sim = 100, reverse = FALSE){
   #tr1<-tr1[i.tr1.nona,]
   # setup map per tag
   #mex.map = map('worldHires', 'Gabon', fill=T, col='transparent', plot=F)
-  CC.map = map('worldHires', fill=T, col='transparent', plot=F, ylim = c(0,50))
+  CC.map = maps::map('worldHires', fill=T, col='transparent', plot=F, ylim = c(0,50))
   
   CC.IDs = sapply(strsplit(CC.map$names, ":"), function(x) x[1])
   CC.sp = map2SpatialPolygons(CC.map, IDs=CC.IDs, proj4string=CRS("+proj=longlat +datum=WGS84"))
@@ -73,7 +74,7 @@ createCRW<-function(tags, tagid=tagid, n.sim = 100, reverse = FALSE){
       
       #debug plot check
       #par(mar=c(3.5, 2, 1, 1)) # margin = c(bottom, left, top, right)
-      map('worldHires', xlim=c(-140,-100), ylim=c(15,50))         # Bluewhale-centric projection
+      maps::map('worldHires', xlim=c(-140,-100), ylim=c(15,50))         # Bluewhale-centric projection
       #  map('worldHires', xlim=c(-100,5), ylim=c(18,50))         # atlantic-centric projection
       map.axes()
       lines(tag$lon, tag$lat,col='grey')                          # plot grey lines for original track
@@ -213,7 +214,7 @@ create.land.CRW<-function(tags, tagid=tagid, n.sim = 100, reverse = FALSE){
   #tr1<-tr1[i.tr1.nona,]
   # setup map per tag
   #mex.map = map('worldHires', 'Gabon', fill=T, col='transparent', plot=F)
-  CC.map = map('worldHires', fill=T, col='transparent', plot=F, ylim = c(0,50))
+  CC.map = maps::map('worldHires', fill=T, col='transparent', plot=F, ylim = c(0,50))
   
   CC.IDs = sapply(strsplit(CC.map$names, ":"), function(x) x[1])
   CC.sp = map2SpatialPolygons(CC.map, IDs=CC.IDs, proj4string=CRS("+proj=longlat +datum=WGS84"))
@@ -242,7 +243,7 @@ create.land.CRW<-function(tags, tagid=tagid, n.sim = 100, reverse = FALSE){
       
       #debug plot check
       #par(mar=c(3.5, 2, 1, 1)) # margin = c(bottom, left, top, right)
-      map('worldHires', xlim=c(14,18), ylim=c(-20,-15))         # Bluewhale-centric projection
+      maps::map('worldHires', xlim=c(14,18), ylim=c(-20,-15))         # Bluewhale-centric projection
       #  map('worldHires', xlim=c(-100,5), ylim=c(18,50))         # atlantic-centric projection
       map.axes()
       lines(tag$lon, tag$lat,col='grey')                          # plot grey lines for original track
