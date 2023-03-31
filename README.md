@@ -4,6 +4,8 @@ Code supporting the publication "Where do they not go?".
 
 Tracking data offer where species choose to go but not where they don't. Generating pseudo-absences is an approach to simulating where they could have gone but did not go, yet the impacts of such generation on species distribution model fit and performance have not yet been tested. The goal of this repo is to use tracking data to generate a suite of pseudo-absences, sample environmental data (using , and to fit, predict, and evaluate species distribution models. Ultimately, we find that traditional model performance metrics alone may not identify the best model depending on the goals and desires when building a predictive model, and we reiterate the need to focus on biological realism along-side traditional skill metrics when evaluating such models.
 
+EDIT 03/31/2023: Consider using ANIMOTUM package for pseudotrack simulation from SSM parameters rather than just speed and turn angle. Code here: https://ianjonsen.github.io/aniMotum/index.html and paper here: https://doi.org/10.1111/2041-210X.14060
+
 **Code authors:** Elliott Hazen (NOAA, UCSC), Heather Welch (UCSC, NOAA), Stephanie Brodie (UCSC, NOAA), Briana Abrahms (UW), Gemma Carroll (UCSC, NOAA)
 
 **Relevant manuscripts:**
