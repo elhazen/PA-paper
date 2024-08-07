@@ -30,7 +30,7 @@ require(viridis)
 require(gridExtra)
 require(scales)
 require(rnaturalearth)
-require(rgeos)
+require(rgeos) #depricated, use sf instead
 library(glue)
 library(reshape2)
 library(mgcViz)
